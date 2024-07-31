@@ -1,17 +1,26 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
-}
 body {
-    font-family: 'DM Serif Display', sans-serif;
     margin: 0;
     padding: 0;
+}
+h1 {
+    font-family: 'DM Serif Display', sans-serif;
+}
+p {
+    font-family: 'Manrope', serif;
+}
+.inline-block {
+    display: inline-block;
+    font-family: 'Manrope', serif;
+    font-weight: semibold;
+    font-size: 16px;
+    vertical-align: top;
+    gap: 20px;
 }
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 300px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
@@ -26,75 +35,154 @@ nav ul {
 }
 nav ul li {
     margin-right: 20px;
-}
-nav ul li {
-    margin-right: 20px;
+    position: relative;
 }
 nav ul li a {
     text-decoration: none;
     color: #000;
 }
+nav ul li a.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+nav ul li a.contact-button:hover {
+    background-color: #333;
+}
 .heroImg {
     text-align: center;
-    padding: 50px 20px;
+    padding: 50px 500px;
 }
-.content {
+.heroImg h1 {
+    margin: 0;
+    font-size: 2.5em;
+    padding-bottom: 100px;
+}
+.about-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
 .about-text {
+    flex: 1;
     text-align: left;
-    margin-right: 20px;
+    padding-right: 50px;
+    padding-top: 0px;
+}
+.about-text h2, .about-text p, .about-text button{
+    margin: 0;
 }
 .about-text h2 {
-    margin: 0;
+    font-size: 32px;
+}
+.about-text h3 {
+    font-size: 24px;
+}
+.about-text h4 {
+    font-size: 20px;
 }
 .about-text p {
     margin: 10px 0;
 }
 .about-text button {
-    padding: 10px 20px;
-    margin-top: 10px;
+    padding: 10px 30px;
+    margin-top: 25px;
+    margin-bottom: 56px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #9f9f9f;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+.about-image img {
+    width: 199px;
+    height: 270px;
+    flex-shrink: 0;
 }
 .social-links {
     list-style-type: none;
-    padding: 0;
     margin: 10px 0 0 0;
+    text-align: left;
+    font-family: 'Manrope', serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
 .social-links li {
-    text-decoration: none;
-    color: #000;
+    margin: 5px 0;
+    display: flex;
+    align-items: flex-start;
 }
 .social-links li a {
+    padding-left: 0px;
     text-decoration: none;
     color: #000;
 }
-.about-image img {
-    height: 200px;
-    border-radius: 50%;
+.social-links li img {
+    height: 30px;
+    padding-top: 10px;
+    margin-right: 10px;
 }
+
 footer {
-    text-align: center;
     padding: 20px;
-    background-color: #f8f8f8;
     margin-top: 50px;
+    width: 100%;
+    bottom: 0;
+    background: var(--footer, linear-gradient(180deg, #FFF 0%, #FFE1E1 28%, #FF8FB0 100%));
 }
 .footer-content {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer-content h2 {
+    margin: 10px;
+}
+.footer-content img {
+    height: 93px;
+    margin-right: 20px;
+    align-self: stretch;
+    padding: 10px;
 }
 .contact-info {
+    font-family: 'Manrope', serif;
+    font-size: 16px;
     list-style-type: none;
     padding: 0;
-    margin: 10px 0 0 0;
-    text-align: left;
+    margin: 0;
+    text-align: right;
 }
 .contact-info li {
     margin: 5px 0;
+    display: flex;
+    text-align: center;
 }
 .contact-info li img{
-    height: 20px;
-    margin-right: 10px;
+    height: 30px;
+    display: flex;
+    align-items: flex-end;
+}
+.contact-info li a {
+    text-decoration: none;
+    color: #000;
+    text-align: right;
 }
